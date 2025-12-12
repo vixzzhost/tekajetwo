@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Kelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="title">Kelas XI IPA 1</div>
+    <div id="menu">
+        <!-- pass 'this' to avoid relying on global event -->
+        <button onclick="showPage('beranda', this)" class="active">Beranda</button>
+        <button onclick="showPage('jadwal', this)">Jadwal</button>
+        <button onclick="showPage('dokumentasi', this)">Dokumentasi</button>
+        <button onclick="showPage('anggota', this)">Anggota</button>
+        <button onclick="showPage('wali', this)">Wali Kelas</button>
+    </div>
+</nav>
+
+<!-- BERANDA -->
+<div id="beranda" class="page" style="display:block;">
+    <h2>Selamat Datang di Website Kelas</h2>
+    <p>Website ini berisi jadwal pelajaran, dokumentasi kegiatan, daftar anggota, serta informasi wali kelas.</p>
+
+    <div class="grid grid-3">
+        <div class="card">📅 Jadwal Pelajaran</div>
+        <div class="card">📷 Dokumentasi Kegiatan</div>
+        <div class="card">👩‍🏫 Anggota & Wali Kelas</div>
+    </div>
+</div>
+
+<!-- JADWAL -->
+<div id="jadwal" class="page">
+    <h2>Jadwal Pelajaran</h2>
+
+    <div class="card"><strong>Senin:</strong> Matematika, Bahasa Indonesia, Biologi</div>
+    <div class="card"><strong>Selasa:</strong> Fisika, PKN, Bahasa Inggris</div>
+    <div class="card"><strong>Rabu:</strong> Kimia, Sejarah, Olahraga</div>
+    <div class="card"><strong>Kamis:</strong> Matematika, Seni Budaya, Prakarya</div>
+    <div class="card"><strong>Jumat:</strong> Agama, Bahasa Inggris, Ekskul</div>
+</div>
+
+<!-- DOKUMENTASI -->
+<div id="dokumentasi" class="page">
+    <h2>Dokumentasi Kegiatan</h2>
+
+    <div class="grid grid-3">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1" class="foto" alt="Pramuka">
+            <h4>Kegiatan Pramuka</h4>
+            <small>12 Oktober 2025</small>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1506812574058-fc75fa93fead" class="foto" alt="Lomba Fisika">
+            <h4>Lomba Fisika</h4>
+            <small>30 September 2025</small>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b" class="foto" alt="Kerja Bakti">
+            <h4>Kerja Bakti</h4>
+            <small>20 Agustus 2025</small>
+        </div>
+    </div>
+</div>
+
+<!-- ANGGOTA -->
+<div id="anggota" class="page">
+    <h2>Daftar Anggota Kelas</h2>
+
+    <div class="grid grid-2">
+        <div class="card anggota-box">
+            <img src="https://i.pravatar.cc/100?img=1" alt="Ahmad">
+            <div><strong>Ahmad</strong><br>NIS: 12345</div>
+        </div>
+
+        <div class="card anggota-box">
+            <img src="https://i.pravatar.cc/100?img=2" alt="Sari">
+            <div><strong>Sari</strong><br>NIS: 12346</div>
+        </div>
+
+        <div class="card anggota-box">
+            <img src="https://i.pravatar.cc/100?img=3" alt="Budi">
+            <div><strong>Budi</strong><br>NIS: 12347</div>
+        </div>
+
+        <div class="card anggota-box">
+            <img src="https://i.pravatar.cc/100?img=4" alt="Rina">
+            <div><strong>Rina</strong><br>NIS: 12348</div>
+        </div>
+    </div>
+</div>
+
+<!-- WALI KELAS -->
+<div id="wali" class="page">
+    <h2>Wali Kelas</h2>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" style="width:150px;border-radius:10px;" alt="Wali Kelas">
+        <h3>Ibu Siti Aisyah</h3>
+        <p>Guru Biologi, ramah dan aktif dalam kegiatan sekolah.</p>
+        <p><strong>Kontak:</strong> 0812-3456-7890 <br>
+        <strong>Email:</strong> siti@sekolah.sch.id</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
