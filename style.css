@@ -1,3 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* NAVBAR */
+nav {
+    background: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav .title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav button {
+    margin-left: 10px;
+    padding: 8px 14px;
+    border: none;
+    background: #e7e7e7;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+nav button.active {
+    background: #0275d8;
+    color: white;
+}
+
+/* PAGE TRANSITION */
+.page {
+    display: none;
+    padding: 20px;
+    animation: fade .3s ease;
+}
+
+@keyframes fade {
+    from { opacity: .3; }
+    to { opacity: 1; }
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    gap: 15px;
+}
+.grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 /* FOTO */
@@ -21,5 +89,9 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
+    object-fit: cover;
+}
+
 
 
